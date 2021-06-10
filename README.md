@@ -23,18 +23,17 @@ rm TextSimilarityAnalysis/books/Shakespeare-*.txt
 
 ```sh
 cd data
-wget https://www.gutenberg.org/cache/epub/3283/pg3283.txt
-wget https://www.gutenberg.org/cache/epub/30/pg30.txt
-wget https://www.gutenberg.org/cache/epub/216/pg216.txt
-wget https://www.gutenberg.org/cache/epub/124/pg124.txt
-wget https://www.gutenberg.org/cache/epub/3458/pg3458.txt
-wget https://www.gutenberg.org/cache/epub/2388/pg2388.txt
-wget https://www.gutenberg.org/cache/epub/24737/pg24737.txt
 wget https://www.gutenberg.org/files/17/17-0.txt
-wget https://www.gutenberg.org/cache/epub/2800/pg2800.txt
-wget https://www.gutenberg.org/cache/epub/2017/pg2017.txt
-wget https://www.gutenberg.org/files/16523/16523-0.txt
+wget https://www.gutenberg.org/files/30/30.txt
+wget https://www.gutenberg.org/files/124/124.txt
+wget https://www.gutenberg.org/files/216/216.txt
+wget https://www.gutenberg.org/files/2017/2017.txt
+wget https://www.gutenberg.org/files/2388/2388.txt
+wget https://www.gutenberg.org/files/2800/2800.txt
 wget https://www.gutenberg.org/files/3283/3283-8.txt
+wget https://www.gutenberg.org/files/3458/3458.txt
+wget https://www.gutenberg.org/files/16523/16523-0.txt
+wget https://www.gutenberg.org/files/24737/24737.txt
 cd ..
 type data/*.txt > texts.txt
 ```
