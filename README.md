@@ -31,6 +31,8 @@ rm TextSimilarityAnalysis/books/JaneAusten-*.txt
 rm TextSimilarityAnalysis/books/Shakespeare-*.txt
 ```
 
+## Religious Texts
+
 ```sh
 cd data
 wget https://www.gutenberg.org/files/17/17-0.txt
@@ -48,6 +50,19 @@ cd ..
 type data/*.txt > texts.txt
 ```
 
+## QAnon
+
+```sh
+wget https://raw.githubusercontent.com/jkingsman/JSON-QAnon/main/posts.json
+```
+
 ```sh
 py -3.7 index.py
+```
+
+
+
+```
+pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio===0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" git+https://github.com/NVIDIA/apex.git@e2083df5eb96643c61613b9df48dd4eea6b07690
 ```
